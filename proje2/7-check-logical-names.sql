@@ -1,3 +1,3 @@
 RESTORE FILELISTONLY
-FROM DISK = 'C:\Backup\BLM4522_full.bak';
+FROM DISK = 'C:\Backup\4522_full.bak';
 GO

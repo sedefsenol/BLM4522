@@ -1,4 +1,4 @@
-USE BLM4522;
+USE [4522];
 GO
 
 IF OBJECT_ID('dbo.BackupTestTable', 'U') IS NOT NULL
@@ -16,10 +16,10 @@ CREATE TABLE dbo.BackupTestTable
 GO
 
 INSERT INTO dbo.BackupTestTable (CustomerName, OperationType, Amount)
-VALUES 
-('Ali Yılmaz', 'Purchase', 1250.50),
-('Ayşe Demir', 'Purchase', 890.00),
-('Mehmet Kaya', 'Refund', 300.00);
+VALUES
+('Ali Yılmaz', 'Purchase', 500),
+('Ayşe Demir', 'Refund', 120),
+('Mehmet Kaya', 'Purchase', 850);
 GO
 
 SELECT * FROM dbo.BackupTestTable;
@@ -28,7 +28,11 @@ GO
 USE master;
 GO
 
-BACKUP DATABASE BLM4522
-TO DISK = 'C:\Backup\BLM4522_full.bak'
-WITH FORMAT, INIT, STATS = 10;
+BACKUP DATABASE [4522]
+TO DISK = 'C:\Backup\4522_full.bak'
+WITH INIT, FORMAT, STATS = 10;
+GO
+
+RESTORE VERIFYONLY
+FROM DISK = 'C:\Backup\4522_full.bak';
 GO

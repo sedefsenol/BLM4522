@@ -1,11 +1,11 @@
 USE master;
 GO
 
-RESTORE DATABASE BLM4522
-FROM DISK = 'C:\Backup\BLM4522_full.bak'
+RESTORE DATABASE [4522]
+FROM DISK = 'C:\Backup\4522_full.bak'
 WITH 
-    MOVE 'BLM4522' TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER01\MSSQL\DATA\BLM4522.mdf',
-    MOVE 'BLM4522_log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER01\MSSQL\DATA\BLM4522_log.ldf',
+    MOVE '4522' TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER01\MSSQL\DATA\4522.mdf',
+    MOVE '4522_log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER01\MSSQL\DATA\4522_log.ldf',
     NORECOVERY,
     REPLACE,
     STATS = 10;
