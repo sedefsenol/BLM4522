@@ -1,0 +1,7 @@
+USE master;
+GO
+
+RESTORE LOG BLM4522
+FROM DISK = 'C:\Backup\BLM4522_log_1.trn'
+WITH RECOVERY, STATS = 10;
+GO

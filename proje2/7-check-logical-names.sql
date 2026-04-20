@@ -1,0 +1,3 @@
+RESTORE FILELISTONLY
+FROM DISK = 'C:\Backup\BLM4522_full.bak';
+GO
