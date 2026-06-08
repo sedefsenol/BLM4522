@@ -10,6 +10,8 @@ Proje 2:Veritabanı Yedekleme ve Felaketten Kurtarma Planı
 https://drive.google.com/file/d/15iTHU5BnCaVmiK4gCSCbq-MOO4JKnLQZ/view?usp=drive_link
 
 
+-----------------------------------------------------------------------------------------
+
 Proje 3:Veritabanı Güvenliği ve Erişim Kontrolü
 
 https://drive.google.com/file/d/1jsMWccLsBut2wHNZUvevXxdWdwNpCIPJ/view?usp=drive_link
